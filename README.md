@@ -2,7 +2,7 @@
 
 ## ✏️ Description
 
-This Employee Payroll Tracker is designed and refactored to meet the needs of an employee payroll tracker, providing a seamless solution for tracking and organizing employee payroll information. This will allow informed decisions and effective allocation of resources to budget for the company's financial needs.
+This Employee Payroll Tracker is designed and refactored to meet the needs of an employee payroll manager, providing a seamless solution for tracking and organizing employee payroll information. This will allow informed decisions and effective allocation of resources to budget for the company's financial needs.
 
 It is tailored to meet the following criteria:
 
