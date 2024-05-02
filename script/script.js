@@ -9,12 +9,18 @@ const collectEmployees = function() {
     let employee = {
       firstName: '',
       lastName: '',
-      salary: ''
+      salary: 0
     };
     
     employee.firstName = prompt("Enter first name:");
     employee.lastName = prompt("Enter last name:");
     employee.salary = prompt("Enter salary:");
+
+    if (isNaN(employee.salary)) {
+      employee.salary = 0; // Set salary to 0 if not a number
+    } else {
+      employee.salary = parseFloat(employee.salary); // Convert salary to float if it is a valid number
+    }
 
     employeesArray.push(employee);
 
@@ -27,8 +33,17 @@ const collectEmployees = function() {
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  const totalSalary = employeesArray.reduce((acc, employee) =>
+    acc + parseFloat(employee.salary), 0);
+
+  const averageSalary = totalSalary / employeesArray.length;
+
+  console.log(`The average employee salary between our ${employeesArray.length} employee(s) is`, averageSalary.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD"
+  }));
 }
+
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
@@ -65,9 +80,9 @@ const displayEmployees = function(employeesArray) {
 
     const salaryCell = document.createElement("td");
     // Format the salary as currency
-    salaryCell.textContent = currentEmployee.salary.toLocaleString("en-US",{
-      style:"currency",
-      currency:"USD"
+    salaryCell.textContent = currentEmployee.salary.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD"
     });
 
     newTableRow.append(salaryCell);
