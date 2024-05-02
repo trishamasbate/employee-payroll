@@ -24,15 +24,26 @@ This code is structured to also log the following:
 1. Average Salary of the employees added
 2. Random Employee selected as a drawing winner from the roster
 
-To run the Employee Payroll Tracker, you can start with either of these steps:
+To run the Employee Payroll Tracker, you can do either of the following:
 
 * Use the link:
   
-  [Employee Payroll Tracker](https://)
+  [Employee Payroll Tracker](https://trishamasbate.github.io/employee-payroll/)
 
-Below is a preview of the Employee Payroll Tracker:
+* Clone the repository:
+```
+git clone https://github.com/trishamasbate/employee-payroll
+```
 
-![Employee Payroll Tracker](./assets/)
+
+
+Below is a preview showing the functionality of the Employee Payroll Tracker:
+
+[Employee Payroll Tracker Workaround](https://youtu.be/nS3KuDqmvh0)
+
+
+
+![Employee Payroll Tracker Screenshot](./images/employee-payroll-tracker.png)
 
 
 ## ✏️ Credits
