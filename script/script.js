@@ -17,9 +17,9 @@ const collectEmployees = function() {
     employee.salary = prompt("Enter salary:");
 
     if (isNaN(employee.salary)) {
-      employee.salary = 0; // Set salary to 0 if not a number
+      employee.salary = 0;
     } else {
-      employee.salary = parseFloat(employee.salary); // Convert salary to float if it is a valid number
+      employee.salary = parseFloat(employee.salary);
     }
 
     employeesArray.push(employee);
